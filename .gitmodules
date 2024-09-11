@@ -1,3 +1,6 @@
 [submodule ".tmux/plugins/tpm"]
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "tmux/.config/tmux/pluginss/tmux-gruvbox"]
+	path = tmux/.config/tmux/pluginss/tmux-gruvbox
+	url = https://github.com/ellisonleao/gruvbox.nvim.git

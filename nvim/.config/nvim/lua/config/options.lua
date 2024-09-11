@@ -8,6 +8,9 @@ vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.scrolloff = 8
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4

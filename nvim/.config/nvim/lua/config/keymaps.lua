@@ -1,8 +1,8 @@
-local opts = { noremap = true, silent = true }
+local opts = { noremap = true, silent = true, nowait = true }
 local keymap = vim.api.nvim_set_keymap
 
-keymap("n", "<C-w>", ":vsplit<cr>", opts)
 keymap("n", "<C-s>", ":split<cr>", opts)
+keymap("n", "<C-w>", ":vsplit<cr>", opts)
 
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)

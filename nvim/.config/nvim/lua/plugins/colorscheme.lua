@@ -1,13 +1,16 @@
 local M = {
-	"Shatur/neovim-ayu",
-	priority = 1000,
-	lazy = false
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    lazy = false
 }
 
 function M.config()
-	require("ayu").setup({ })
+	require("gruvbox").setup({
+        transparent_mode = true
+    })
 
-	vim.cmd "colorscheme ayu"
+    vim.cmd "set background=dark"
+	vim.cmd "colorscheme gruvbox"
 end
 
 return M
