@@ -1,7 +1,7 @@
 ## My personal dotfiles
 After some time i finally decided to set up my own dotfiles so that i can easily get my config files on each pc i use. So here is my simple setup:
+![alt text]([http://url/to/img.png](https://imgur.com/5cu9lYf))
 
-![Screenshot of my config:](https://imgur.com/5cu9lYf)
 ## Features
 **Neovim**
 
