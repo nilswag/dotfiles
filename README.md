@@ -1,6 +1,6 @@
 ## My personal dotfiles
 After some time i finally decided to set up my own dotfiles so that i can easily get my config files on each pc i use. So here is my simple setup:
-![alt text](https://github.com/[nilswag]/[dotfiles]/blob/[main]/screenshot.png?raw=true)
+![alt text](screenshot.png?raw=true)
 
 
 ## Features
