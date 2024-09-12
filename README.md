@@ -1,7 +1,8 @@
 ## My personal dotfiles
 After some time i finally decided to set up my own dotfiles so that i can easily get my config files on each pc i use. So here is my simple setup:
+![alt text](screenshot.png?raw=true)
 
-![Screenshot of my config:](https://imgur.com/5cu9lYf)
+
 ## Features
 **Neovim**
 
@@ -37,7 +38,9 @@ Before you use my dotfiles make sure to have the following packages installed:
  - `gcc`
  
 *Using `apt` as an example:*
+
 `$ sudo apt update && sudo apt upgrade -y`
+
 `$ sudo apt install git zsh tmux neovim stow gcc -y`
 ## 
 Run this:
