@@ -51,7 +51,7 @@ zstyle ":completion:*" matcher-list "m:{a-z}={A-Za-z}"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Personal aliases.
-alias dev="/mnt/c/users/nilsw/documents/dev"
+alias dev="cd /mnt/c/users/nilsw/documents/dev"
 alias dotfiles="git -C ~/.dotfiles"
 
 alias vim="nvim"
