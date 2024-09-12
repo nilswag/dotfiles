@@ -38,6 +38,7 @@ Before you use my dotfiles make sure to have the following packages installed:
  - `gcc`
  
 *Using `apt` as an example:*
+
 `$ sudo apt update && sudo apt upgrade -y`
 
 `$ sudo apt install git zsh tmux neovim stow gcc -y`
