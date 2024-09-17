@@ -37,7 +37,8 @@ Before you use my dotfiles make sure to have the following packages installed:
  - `stow`
  - `gcc`
  - `exa`
- - `oh-my-zsh`
+
+**Make sure to install [oh-my-zsh](https://ohmyz.sh/) first, otherwise the install won't work.**
  
 *Using `apt` as an example:*
 
