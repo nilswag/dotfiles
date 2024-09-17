@@ -37,14 +37,16 @@ Before you use my dotfiles make sure to have the following packages installed:
  - `stow`
  - `gcc`
  - `exa`
-
-**Make sure to install [oh-my-zsh](https://ohmyz.sh/) first, otherwise the install won't work.**
  
 *Using `apt` as an example:*
 
 `$ sudo apt update && sudo apt upgrade -y`
 
 `$ sudo apt install git zsh tmux neovim stow gcc exa -y`
+
+
+**Make sure to install [oh-my-zsh](https://ohmyz.sh/) before cloning the repo, otherwise the install won't work.**
+
 ## 
 Run this:
 `$ git clone --recursive https://github.com/nilswag/dotfiles ~/.dotfiles && cd ~/.dotfiles`
