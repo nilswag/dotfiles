@@ -42,7 +42,7 @@ Before you use my dotfiles make sure to have the following packages installed:
 
 `$ sudo apt update && sudo apt upgrade -y`
 
-`$ sudo apt install git zsh tmux neovim stow gcc -y`
+`$ sudo apt install git zsh tmux neovim stow gcc exa -y`
 ## 
 Run this:
 `$ git clone --recursive git@github.com:nilswag/dotfiles.git ~/.dotfiles && cd ~/.dotfiles`
