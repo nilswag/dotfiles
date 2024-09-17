@@ -35,7 +35,8 @@ Before you use my dotfiles make sure to have the following packages installed:
  - `tmux`
  - `neovim`
  - `stow`
- - `gcc`
+ - `gcc
+ - `exa`
  
 *Using `apt` as an example:*
 
