@@ -45,7 +45,7 @@ Before you use my dotfiles make sure to have the following packages installed:
 `$ sudo apt install git zsh tmux neovim stow gcc exa -y`
 ## 
 Run this:
-`$ git clone --recursive (https://github.com/nilswag/dotfiles ~/.dotfiles && cd ~/.dotfiles`
+`$ git clone --recursive https://github.com/nilswag/dotfiles ~/.dotfiles && cd ~/.dotfiles`
 This will clone the dotfiles repo into the `~/.dotfiles` directory and will `cd` into it.
  Running `$ stow */` will make sure that the dotfiles are symlinked and copied to the respecting directories in `~/.config` and just in your home directory.
 
