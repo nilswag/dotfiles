@@ -5,9 +5,11 @@ local g = vim.g
 o.cursorline = true
 o.scrolloff = 6
 
+o.termguicolors = true
+
 o.signcolumn = "yes"
 o.number = true
-o.laststatus = 2
+o.laststatus = 0
 
 o.wrap = false
 
