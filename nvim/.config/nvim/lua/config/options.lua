@@ -10,6 +10,7 @@ o.background = "dark"
 
 o.signcolumn = "yes"
 o.number = true
+o.relativenumber = true
 o.laststatus = 0
 
 o.wrap = false
@@ -39,8 +40,8 @@ g.clipboard = {
 		["*"] = "clip.exe"
 	},
 	["paste"] = {
-		["+"] = "powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace('`r', ''))",
-		["*"] = "powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace('`r', ''))"
+		["+"] = "powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace('\r', ''))",
+		["*"] = "powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace('\r', ''))"
 	},
 	["cache_enabled"] = 0
 }
