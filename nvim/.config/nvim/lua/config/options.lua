@@ -3,9 +3,10 @@ local o = vim.opt
 local g = vim.g
 
 o.cursorline = true
-o.scrolloff = 6
+o.scrolloff = 10
 
 o.termguicolors = true
+o.background = "dark"
 
 o.signcolumn = "yes"
 o.number = true
