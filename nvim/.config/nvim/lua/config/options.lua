@@ -7,6 +7,7 @@ o.scrolloff = 6
 
 o.signcolumn = "yes"
 o.number = true
+o.laststatus = 2
 
 o.wrap = false
 
