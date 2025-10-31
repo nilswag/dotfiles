@@ -1,1 +1,3 @@
-vim.api.nvim_echo({{"Hello, Neovim!", "Normal"}}, false, {})
+require "config.keymaps"
+require "config.options"
+
