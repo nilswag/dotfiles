@@ -11,7 +11,9 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "clangd",
-                "neocmake"
+                "neocmake",
+
+                "cpplint"
             }
         })
     end

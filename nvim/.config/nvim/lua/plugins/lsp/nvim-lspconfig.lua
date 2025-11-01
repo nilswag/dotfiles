@@ -13,6 +13,8 @@ return {
 
             km("n", "K", vim.lsp.buf.hover, { desc = "Hover information" })
             km("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic" })
+
+            -- km("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Show code actions" })
         end
 
         vim.lsp.config("lua_ls", { on_attach = on_attach })
