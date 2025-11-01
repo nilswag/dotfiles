@@ -1,13 +1,33 @@
--- default options for keymaps 
--- silent: prevent output
--- noremap: prevent recursive keymaps
-local opts = { silent = true, noremap = true }
 
 -- set local and global map leader
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+local km = vim.keymap.set
+
 -- shortcuts for going to normal mode
-vim.keymap.set("i", "jj", "<esc>", opts)
-vim.keymap.set("i", "jk", "<esc>", opts)
+-- km("i", "jj", "<esc>", { desc = "Go to normal mode" })
+km("i", "jk", "<esc>", { desc = "Go to normal mode" })
+
+-- better window navigation
+km("n", "<c-h>", "<c-w>h", { desc = "Go to window left" })
+km("n", "<c-l>", "<c-w>l", { desc = "Go to window right" })
+km("n", "<c-j>", "<c-w>j", { desc = "Go to window down" })
+km("n", "<c-k>", "<c-w>k", { desc = "Go to window up" })
+
+-- buffer navigation
+km("n", "<s-h>", ":bprev<cr>", { desc = "Go to previous buffer", silent = true })
+km("n", "<s-l>", ":bnext<cr>", { desc = "Go to next buffer", silent = true })
+
+-- keep indenting
+km("v", "<", "<gv", { desc = "Indent left" })
+km("v", ">", ">gv", { desc = "Indent right" })
+
+-- move selected lines in visual mode
+km("v", "K", ":m '<-2<cr>gv=gv", { desc = "Move selected line up one", silent = true })
+km("v", "J", ":m '>+1<cr>gv=gv", { desc = "Move selected line down one", silent = true })
+
+-- move current line in normal mode
+km("n", "<a-j>", ":m .+1<cr>==", { desc = "Move current line down one", silent = true })
+km("n", "<a-k>", ":m .-2<cr>==", { desc = "Move current line down one", silent = true })
 
