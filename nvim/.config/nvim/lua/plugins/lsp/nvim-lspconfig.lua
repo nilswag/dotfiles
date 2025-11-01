@@ -3,7 +3,9 @@ return {
 
     config = function()
         vim.lsp.config("lua_ls", {})
+
         vim.lsp.config("clangd", {})
-        vim.lsp.config("cmake", {})
+
+        vim.lsp.config("neocmake", {})
     end
 }
