@@ -15,6 +15,10 @@ km("n", "<c-l>", "<c-w>l", { desc = "Go to window right" })
 km("n", "<c-j>", "<c-w>j", { desc = "Go to window down" })
 km("n", "<c-k>", "<c-w>k", { desc = "Go to window up" })
 
+-- better window splits
+km("n", "<leader>w", ":split<cr>", { desc = "Split window horizontally", silent = true })
+km("n", "<leader>s", ":vsplit<cr>", { desc = "Split window vertically", silent = true })
+
 -- buffer navigation
 km("n", "<s-h>", ":bprev<cr>", { desc = "Go to previous buffer", silent = true })
 km("n", "<s-l>", ":bnext<cr>", { desc = "Go to next buffer", silent = true })

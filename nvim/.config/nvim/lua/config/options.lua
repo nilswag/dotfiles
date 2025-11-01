@@ -34,7 +34,7 @@ o.expandtab = true
 
 o.clipboard = "unnamedplus"
 g.clipboard = {
-	["name"] = "WslClipboard",
+	["name"] = "wslclipboard",
 	["copy"] = {
 		["+"] = "clip.exe",
 		["*"] = "clip.exe"
