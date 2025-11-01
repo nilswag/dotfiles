@@ -12,8 +12,6 @@ return {
                 "lua_ls",
                 "clangd",
                 "neocmake",
-
-                "cpplint"
             }
         })
     end
