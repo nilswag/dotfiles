@@ -26,6 +26,10 @@ vim.opt.wrap = false                      -- disable line wrapping
 vim.opt.clipboard = "unnamedplus"         -- use system clipboard
 vim.opt.signcolumn = "yes"                -- always show sign column
 
+-- disable netrw 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- =========================
 -- Search
 -- =========================
