@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- setup lazy
 require("lazy").setup({
-	spec = "plugins",
+	spec = "nilswag.plugins",
 
 	change_detection = {
 	    -- automatically check for config file changes and reload the ui

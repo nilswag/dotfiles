@@ -1,3 +1,3 @@
 require("nilswag.config.remap")
-require("nilswag.config.options")
 require("nilswag.config.lazy")
+require("nilswag.config.options")
