@@ -3,11 +3,29 @@ local on_attach = function(bufnr)
     return { noremap = true, desc = desc }
   end
 
-  vim.keymap.set("n", "K", vim.lsp.buf.hover, opts("Hover")) 
+  vim.keymap.set("n", "K", vim.lsp.buf.hover, opts("Hover"))
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts("Go to definition"))
   vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts("Go to implementation"))
 end
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 vim.lsp.config("lua_ls", {
-  on_attach = on_attach
+  on_attach = on_attach,
+  capabilities = capabilities
+})
+
+vim.lsp.config("clangd", {
+  on_attach = on_attach,
+  capabilities = capabilities
+})
+
+vim.lsp.config("vim_ls", {
+  on_attach = on_attach,
+  capabilities = capabilities
+})
+
+vim.lsp.config("cmake", {
+  on_attach = on_attach,
+  capabilities = capabilities
 })

@@ -11,5 +11,12 @@ return {
   {
     "mason-org/mason-lspconfig.nvim",
     config = function() require(path .. "mason-lspconfig") end
+  },
+  {
+    "hrsh7th/cmp-nvim-lsp",
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function() require(path .. "nvim-cmp") end
   }
 }
