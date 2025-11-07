@@ -1,1 +1,1 @@
-print("Hello Neovim")
+require("nilswag")
