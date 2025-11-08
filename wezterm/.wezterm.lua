@@ -8,4 +8,6 @@ config.font = wezterm.font("UbuntuMono Nerd Font Mono")
 
 config.enable_tab_bar = false
 
+config.enable_wayland = false
+
 return config
