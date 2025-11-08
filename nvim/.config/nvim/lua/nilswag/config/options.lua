@@ -6,7 +6,7 @@ vim.opt.termguicolors = true              -- enable true colors in terminal
 vim.opt.number = true                     -- enable absolute line numbers
 vim.opt.relativenumber = true             -- enable relative line numbers
 vim.opt.cursorline = true                 -- highlight the current line
-vim.opt.guicursor = ""                    -- always use block cursor
+-- vim.opt.guicursor = ""                    -- always use block cursor
 vim.opt.scrolloff = 10                    -- keep 10 lines above/below cursor
 
 -- =========================
