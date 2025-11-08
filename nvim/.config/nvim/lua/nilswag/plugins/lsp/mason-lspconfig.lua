@@ -4,7 +4,7 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "clangd",
     "cmake",
-    "vimls"
+    "vimls",
   }
 })
 
