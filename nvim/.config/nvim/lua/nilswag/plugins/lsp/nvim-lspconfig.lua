@@ -1,4 +1,4 @@
-local on_attach = function(bufnr)
+local on_attach = function(_, bufnr)
   local opts = function(desc)
     return { noremap = true, buffer = bufnr, desc = desc }
   end
