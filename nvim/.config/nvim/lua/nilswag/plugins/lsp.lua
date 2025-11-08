@@ -34,19 +34,24 @@ return {
         vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts("Show references"))
       end
 
-      vim.diagnostic.config({ virtual_lines = true })
+      -- vim.diagnostic.config({ virtual_lines = true })
       vim.diagnostic.config({ virtual_text = true })
 
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
       vim.lsp.config("lua_ls", {
-        on_attach = on_attach
+        on_attach = on_attach,
+        capabilities = capabilities
       })
 
       vim.lsp.config("clangd", {
-        on_attach = on_attach
+        on_attach = on_attach,
+        capabilities = capabilities
       })
 
       vim.lsp.config("vimls", {
-        on_attach = on_attach
+        on_attach = on_attach,
+        capabilities = capabilities
       })
     end
   }
