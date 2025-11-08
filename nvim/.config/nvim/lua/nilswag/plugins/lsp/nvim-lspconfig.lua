@@ -1,6 +1,6 @@
-local on_attach = function(client, bufnr)
+local on_attach = function(bufnr)
   local opts = function(desc)
-    return { noremap = true, desc = desc }
+    return { noremap = true, bufnr = bufnr, desc = desc }
   end
 
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts("Hover"))
@@ -32,4 +32,12 @@ vim.lsp.config("vim_ls", {
 vim.lsp.config("cmake", {
   on_attach = on_attach,
   capabilities = capabilities
+})
+
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
 })
