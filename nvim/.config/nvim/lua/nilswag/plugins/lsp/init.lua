@@ -16,6 +16,10 @@ return {
     "hrsh7th/cmp-nvim-lsp",
   },
   {
+    "L3MON4D3/LuaSnip",
+    build = "make install_jsregexp"
+  },
+  {
     "hrsh7th/nvim-cmp",
     config = function() require(path .. "nvim-cmp") end
   }
