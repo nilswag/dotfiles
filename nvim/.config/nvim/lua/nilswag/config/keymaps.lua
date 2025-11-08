@@ -30,3 +30,4 @@ vim.keymap.set("n", "<leader>s", ":vsplit<cr>", opts("Split window vertically"))
 -- buffer management
 -- =========================
 vim.keymap.set("n", "<leader>q", ":bd<cr>", opts("Close active buffer"))
+

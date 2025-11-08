@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.color_scheme = "Black Metal (base16)"
+config.color_scheme = "Gruvbox Dark (Gogh)"
 
 config.font_size = 18
 config.font = wezterm.font("UbuntuMono Nerd Font Mono")
