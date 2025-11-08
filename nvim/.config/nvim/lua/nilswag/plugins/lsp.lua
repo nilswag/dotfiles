@@ -34,6 +34,9 @@ return {
         vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts("Show references"))
       end
 
+      vim.diagnostic.config({ virtual_lines = true })
+      vim.diagnostic.config({ virtual_text = true })
+
       vim.lsp.config("lua_ls", {
         on_attach = on_attach
       })
