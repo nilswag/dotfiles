@@ -1,6 +1,6 @@
 local on_attach = function(bufnr)
   local opts = function(desc)
-    return { noremap = true, bufnr = bufnr, desc = desc }
+    return { noremap = true, buffer = bufnr, desc = desc }
   end
 
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts("Hover"))
