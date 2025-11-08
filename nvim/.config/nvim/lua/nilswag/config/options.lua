@@ -1,6 +1,6 @@
 
 -- =========================
--- Appearance
+-- appearance
 -- =========================
 vim.opt.termguicolors = true              -- enable true colors in terminal
 vim.opt.number = true                     -- enable absolute line numbers
@@ -10,7 +10,7 @@ vim.opt.cursorline = true                 -- highlight the current line
 vim.opt.scrolloff = 10                    -- keep 10 lines above/below cursor
 
 -- =========================
--- Tabs and Indentation
+-- tabs and indentation
 -- =========================
 vim.opt.tabstop = 2                       -- number of spaces that a <tab> displays
 vim.opt.softtabstop = 2                   -- number of spaces that a <tab> inserts
@@ -19,7 +19,7 @@ vim.opt.expandtab = true                  -- convert tabs to spaces
 vim.opt.smartindent = true                -- automatically indent new lines
 
 -- =========================
--- Editing Behavior
+-- editing behavior
 -- =========================
 vim.opt.wrap = false                      -- disable line wrapping
 vim.opt.clipboard = "unnamedplus"         -- use system clipboard
@@ -30,7 +30,7 @@ vim.opt.signcolumn = "yes"                -- always show sign column
 -- vim.g.loaded_netrwPlugin = 1
 
 -- =========================
--- Search
+-- search
 -- =========================
 vim.opt.hlsearch = false                  -- disable persistent highlights after search
 vim.opt.ignorecase = true                 -- ignore case in search
@@ -38,14 +38,14 @@ vim.opt.smartcase = true                  -- override ignorecase if uppercase le
 vim.opt.incsearch = true                  -- incremental search
 
 -- =========================
--- Window Management
+-- window management
 -- =========================
 vim.opt.splitbelow = true                 -- horizontal splits open below
 vim.opt.splitright = true                 -- vertical splits open to the right
 vim.opt.laststatus = 2                    -- remove default statusline
 
 -- =========================
--- Backup and Undo
+-- backup and undo
 -- =========================
 vim.opt.swapfile = true                   -- keep a swapfile for crash recovery
 vim.opt.undofile = true                   -- save undo history between sessions
