@@ -1,5 +1,6 @@
 -- config initialization
 local wezterm = require("wezterm")
+local smart_splits = wezterm.plugin.require("https://github.com/mrjones2014/smart-splits.nvim")
 local config = wezterm.config_builder()
 
 config.color_scheme = "Gruvbox Dark (Gogh)"
@@ -14,14 +15,16 @@ config.window_padding = {
   bottom = 0,
 }
 
-config.background = {
-  {
-    source = {
-      File = "/home/nils/.config/wezterm/wallpaper.jpg"
-    },
-    hsb = { brightness = 0.075 }
-  }
-}
+-- config.background = {
+--  {
+--    source = {
+--      File = "/home/nils/.config/wezterm/wallpaper.jpg"
+--    },
+--    hsb = { brightness = 0.075 }
+--  }
+-- }
+config.window_background_opacity = 0.75
+config.kde_window_background_blur = true
 
 config.initial_cols = 90
 config.initial_rows = 30
@@ -44,5 +47,7 @@ config.keys = {
     action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" })
   }
 }
+
+smart_splits.apply_to_config(config)
 
 return config
