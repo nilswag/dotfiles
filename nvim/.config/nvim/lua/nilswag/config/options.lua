@@ -43,6 +43,7 @@ vim.opt.incsearch = true                  -- incremental search
 vim.opt.splitbelow = true                 -- horizontal splits open below
 vim.opt.splitright = true                 -- vertical splits open to the right
 vim.opt.laststatus = 0                    -- remove default statusline
+vim.opt.showmode = false
 
 -- =========================
 -- backup and undo
