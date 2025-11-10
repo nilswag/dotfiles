@@ -13,9 +13,10 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
+config.window_background_opacity = 0.75
+config.kde_window_background_blur = true
 
-
-config.enable_wayland = false
+config.enable_wayland = true
 
 
 return config
