@@ -23,7 +23,7 @@ config.window_padding = {
 --    hsb = { brightness = 0.075 }
 --  }
 -- }
-config.window_background_opacity = 0.75
+config.window_background_opacity = 0.9
 config.kde_window_background_blur = true
 
 config.initial_cols = 90
