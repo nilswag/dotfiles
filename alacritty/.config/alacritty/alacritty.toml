@@ -1,0 +1,14 @@
+[general]
+import = [ "~/.dotfiles/alacritty/.config/alacritty/themes/gruvbox_dark.toml" ]
+
+[window]
+opacity = 0.75
+blur = true
+
+[font]
+normal = { family = "UbuntuMono Nerd Font Mono" }
+size = 15
+
+[terminal]
+shell = "/bin/zsh"
+
