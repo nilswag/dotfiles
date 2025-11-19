@@ -48,6 +48,6 @@ vim.opt.showmode = false
 -- =========================
 -- backup and undo
 -- =========================
-vim.opt.swapfile = true                   -- keep a swapfile for crash recovery
+vim.opt.swapfile = false -- keep a swapfile for crash recovery
 vim.opt.undofile = true                   -- save undo history between sessions
 vim.opt.undolevels = 150                  -- max undo levels to save in undo file
