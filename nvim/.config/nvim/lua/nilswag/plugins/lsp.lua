@@ -53,6 +53,21 @@ return {
         on_attach = on_attach,
         capabilities = capabilities
       })
+
+      vim.lsp.enable({
+          name = "gdscript",
+          cmd = nil,  -- no need to spawn
+          on_attach = on_attach,
+          capabilities = capabilities,
+          transport = "tcp",
+          host = "127.0.0.1",
+          port = 6005,
+      })
+
+      local projectfile = vim.fn.getcwd() .. "/project.godot"
+      if vim.fn.filereadable(projectfile) then
+          vim.lsp.enable("gdscript")
+      end
     end
   }
 }
