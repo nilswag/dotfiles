@@ -20,3 +20,30 @@ setopt HIST_FIND_NO_DUPS                # do not display previously found comman
 setopt AUTOCD                           # automatic go into directories without typing cd
 setopt NOBEEP                           # no annoying alerts
 setopt NUMERIC_GLOB_SORT                # correctly sort names
+
+
+# ===========================================================================
+# completion
+# ===========================================================================
+
+# load completion system
+autoload -Uz compinit
+
+# initialize completion with metadata file
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
+
+# enable interactive menu
+zstyle ":completion:*" menu select
+zstyle ":completion:*" matcher-list "m:{a-z}={A-Za-z}"
+
+# ===========================================================================
+# config files
+# ===========================================================================
+
+# aliases
+source "$ZDOTDIR/aliases.zsh"
+
+# custom keybinds
+
+# prompt/theme
+source "$ZDOTDIR/prompt.zsh"
