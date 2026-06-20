@@ -1,3 +1,4 @@
+#!/bin/zsh
 
 # automatically change shell to zsh
 if [[ "$(basename "$SHELL")" != "zsh" ]]; then
@@ -13,27 +14,25 @@ if [[ "$(basename "$SHELL")" != "zsh" ]]; then
      fi
 fi
 
+
 # ===========================================================================
 # options
 # ===========================================================================
 
-# history stuff
 HISTFILE="$XDG_CACHE_HOME/zsh/history"  # history file location
 HISTSIZE=5000                           # max stored commands on disk
 SAVEHIST=5000                           # max stored commands in memory
 
+setopt AUTO_CD                          # automatically use cd for non-commands which are directories
+setopt AUTO_PUSHD                       # automatically use pushd when using cd
+setopt PUSHD_IGNORE_DUPS                # don't push duplicates to directory stack
+setopt ALWAYS_TO_END                    # always move cursor to end of completion
 setopt APPEND_HISTORY                   # append to history instead of replacing
-
-setopt EXTENDED_HISTORY                 # include timestamp
-setopt HIST_IGNORE_DUPS                 # do not save duplicate of prior command
-setopt HIST_IGNORE_SPACE                # do not save if line starts with space
-setopt HIST_EXPIRE_DUPS_FIRST           # trim dupes first if history is full
-setopt HIST_FIND_NO_DUPS                # do not display previously found command
-
-# general options
-setopt AUTOCD                           # automatic go into directories without typing cd
-setopt NOBEEP                           # no annoying alerts
-setopt NUMERIC_GLOB_SORT                # correctly sort names
+setopt HIST_FIND_NO_DUPS                # don't display duplicates
+setopt HIST_IGNORE_ALL_DUPS             # replace older duplicates with newer ones
+setopt HIST_IGNORE_DUPS                 # don't add duplicates to command list
+setopt HIST_SAVE_NO_DUPS                # don't save duplicates to history file
+setopt SHARE_HISTORY                    # share history between different open shells
 
 
 # ===========================================================================
@@ -43,7 +42,7 @@ setopt NUMERIC_GLOB_SORT                # correctly sort names
 # aliases
 source "$ZDOTDIR/aliases.zsh"
 
-# custom keybinds
-
 # prompt/theme
 source "$ZDOTDIR/prompt.zsh"
+
+# custom keybinds

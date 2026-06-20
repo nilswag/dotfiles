@@ -15,3 +15,6 @@ export PATH="$HOME/.local/bin:$PATH"
 # default editor used by git, visudo, etc.
 export EDITOR=nvim
 export VISUAL=nvim
+
+# pager
+export MANPAGER="bat -l man -p"
