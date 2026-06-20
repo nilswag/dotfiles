@@ -1,6 +1,15 @@
 
 # eza (alternative to ls)
-alias ls=eza
+alias ls="eza --icons"
+alias ll="eza -lh --icons --git"
+alias la="eza -lha --icons --git"
+alias tree="eza --tree --icons --git"
+
+# ripgrep
+alias grep="rg --color=auto"
+
+# diff
+alias diff="diff --color=auto"
 
 # bat (alternative to cat)
 alias cat=bat
