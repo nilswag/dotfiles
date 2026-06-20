@@ -1,12 +1,26 @@
 
+# automatically change shell to zsh
+if [[ "$(basename "$SHELL")" != "zsh" ]]; then
+     echo "default shell is not zsh"
+
+     local ZSH_PATH="$(command -v zsh)"
+
+     if [[ -n "$ZSH_PATH" ]]; then
+          sudo chsh -s "$ZSH_PATH" "$USER"
+     else
+          echo "zsh not installed"
+          exit 1
+     fi
+fi
+
 # ===========================================================================
 # options
 # ===========================================================================
 
 # history stuff
 HISTFILE="$XDG_CACHE_HOME/zsh/history"  # history file location
-SAVEHIST=9999                           # max stored history stuff
-HISTSIZE=9999                           # max in-memory history stuff
+HISTSIZE=5000                           # max stored commands on disk
+SAVEHIST=5000                           # max stored commands in memory
 
 setopt APPEND_HISTORY                   # append to history instead of replacing
 
@@ -21,20 +35,6 @@ setopt AUTOCD                           # automatic go into directories without 
 setopt NOBEEP                           # no annoying alerts
 setopt NUMERIC_GLOB_SORT                # correctly sort names
 
-
-# ===========================================================================
-# completion
-# ===========================================================================
-
-# load completion system
-autoload -Uz compinit
-
-# initialize completion with metadata file
-compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
-
-# enable interactive menu
-zstyle ":completion:*" menu select
-zstyle ":completion:*" matcher-list "m:{a-z}={A-Za-z}"
 
 # ===========================================================================
 # config files
