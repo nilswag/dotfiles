@@ -1,5 +1,3 @@
-#!/bin/zsh
-
 # automatically change shell to zsh
 if [[ "$(basename "$SHELL")" != "zsh" ]]; then
      echo "default shell is not zsh"
@@ -10,14 +8,14 @@ if [[ "$(basename "$SHELL")" != "zsh" ]]; then
           sudo chsh -s "$ZSH_PATH" "$USER"
      else
           echo "zsh not installed"
-          exit 1
+          return
      fi
 fi
 
 # options
 HISTFILE="$XDG_CACHE_HOME/zsh/history"  # history file location
-HISTSIZE=5000                           # max stored commands on disk
-SAVEHIST=5000                           # max stored commands in memory
+HISTSIZE=5000                           # max stored commands in memory
+SAVEHIST=5000                           # max stored commands on disk
 
 setopt AUTO_CD                          # automatically use cd for non-commands which are directories
 setopt AUTO_PUSHD                       # automatically use pushd when using cd
@@ -43,4 +41,5 @@ source "$ZDOTDIR/aliases.zsh"
 # prompt/theme
 source "$ZDOTDIR/prompt.zsh"
 
-# custom keybinds
+# plugins
+source "$ZDOTDIR/plugins.zsh"
