@@ -14,11 +14,7 @@ if [[ "$(basename "$SHELL")" != "zsh" ]]; then
      fi
 fi
 
-
-# ===========================================================================
 # options
-# ===========================================================================
-
 HISTFILE="$XDG_CACHE_HOME/zsh/history"  # history file location
 HISTSIZE=5000                           # max stored commands on disk
 SAVEHIST=5000                           # max stored commands in memory
@@ -34,11 +30,13 @@ setopt HIST_IGNORE_DUPS                 # don't add duplicates to command list
 setopt HIST_SAVE_NO_DUPS                # don't save duplicates to history file
 setopt SHARE_HISTORY                    # share history between different open shells
 
+# completion
+autoload -U compinit
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
+zstyle ":completion:*" menu select
+zstyle ":completion:*" matcher-list "m:{a-z}={A-Za-z}"
 
-# ===========================================================================
 # config files
-# ===========================================================================
-
 # aliases
 source "$ZDOTDIR/aliases.zsh"
 
