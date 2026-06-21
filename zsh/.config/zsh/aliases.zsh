@@ -1,8 +1,6 @@
 
 # eza (alternative to ls)
-alias ls="eza --icons"
-alias ll="eza -lh --icons --git"
-alias la="eza -lha --icons --git"
+alias ls="eza --icons --git"
 alias tree="eza --tree --icons --git"
 
 # ripgrep
