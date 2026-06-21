@@ -4,10 +4,8 @@ font_family family="UbuntuMono Nerd Font"
 
 enable_audio_bell no
 
-initial_window_width 80c
-initial_window_height 24c
+initial_window_width 80
+initial_window_height 24
 
-remember_window_size no
-
-# Bliss
+# Tomorrow Night Bright
 include current-theme.conf

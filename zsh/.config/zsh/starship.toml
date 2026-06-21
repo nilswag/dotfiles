@@ -1,4 +1,4 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+"$schema" = "https://starship.rs/config-schema.json"
 
 format = """
 $username\
@@ -16,12 +16,12 @@ $character"""
 style = "blue"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[❯](purple) "
+error_symbol = "[❯](red) "
+vimcmd_symbol = "[❮](green) "
 
 [git_branch]
-format = "[$branch]($style)"
+format = "[$branch]($style) "
 style = "bright-black"
 
 [git_status]
