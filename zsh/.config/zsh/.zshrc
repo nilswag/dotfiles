@@ -43,3 +43,6 @@ source "$ZDOTDIR/prompt.zsh"
 
 # plugins
 source "$ZDOTDIR/plugins.zsh"
+
+# keybinds
+source "$ZDOTDIR/keybinds.zsh"
