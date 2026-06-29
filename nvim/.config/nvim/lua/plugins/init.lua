@@ -2,7 +2,9 @@
 local spec_files = {
     "moonfly",
     "mini",
-    "mini-pick"
+    "mini-pick",
+    "mini-files",
+    "mini-statusline"
 }
 
 for i, spec_file in ipairs(spec_files) do
