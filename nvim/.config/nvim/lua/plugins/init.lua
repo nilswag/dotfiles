@@ -12,6 +12,7 @@ local spec_files = {
     "git-integration",
     "moonfly",
     "lsp",
+    "toggleterm",
     "cmake-tools"
 }
 
