@@ -2,11 +2,7 @@ local M = {}
 
 M.config = function()
     local mini_completion = require("mini.completion")
-    mini_completon.setup({
-        lsp_completion = {
-            auto_setup = true
-        }
-    })
+    mini_completion.setup()
 end
 
 return M
