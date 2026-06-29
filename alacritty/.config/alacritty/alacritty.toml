@@ -5,7 +5,7 @@ import = [
 
 [font]
 normal = {
-	family = "CodeNewRoman Mono Nerd Font",
+	family = "CodeNewRoman Nerd Font Mono",
 	style = "Regular"
 }
 
