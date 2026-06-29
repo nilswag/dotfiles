@@ -1,7 +1,6 @@
 
 local spec_files = {
-    "lualine",
-    "catppuccin"
+    "catppuccin",
 }
 
 for i, spec_file in ipairs(spec_files) do
