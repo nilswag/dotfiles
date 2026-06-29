@@ -39,6 +39,4 @@ vim.opt.selection = "inclusive" -- include last char in selection
 vim.opt.splitbelow = true -- split to below by default
 vim.opt.splitright = true -- split to right by default
 
-vim.opt.termguicolors = true
-vim.cmd.colorscheme("habamax")
-
+vim.opt.termguicolors = true -- enable terminal gui colors
