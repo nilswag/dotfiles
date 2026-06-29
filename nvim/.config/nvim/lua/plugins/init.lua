@@ -7,7 +7,7 @@ for name, type in vim.fs.dir(dir) do
         local spec = require(mod_name)
 
         if spec.plugins then
-            vim.pack.add(spec.plugins, { confirm = true })
+            vim.pack.add(spec.plugins, { confirm = false })
         end
 
         if spec.config then
