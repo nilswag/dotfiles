@@ -26,5 +26,19 @@ vim.opt.cmdheight = 1 -- single line command line
 vim.opt.showmode = false -- do not show mode
 vim.opt.pumheight = 10 -- pop up window height
 
+vim.opt.backup = false -- do not create a backup file
+vim.opt.writebackup = false -- do not write to a backup file
+vim.opt.swapfile = false -- do not create a swap file
+vim.opt.autoread = true -- automatically update file
+
+vim.opt.mouse = "a" -- enable mouse support
+vim.opt.clipboard:append("unnamedplus") -- use system clipboard
+
+vim.opt.selection = "inclusive" -- include last char in selection
+
+vim.opt.splitbelow = true -- split to below by default
+vim.opt.splitright = true -- split to right by default
+
 vim.opt.termguicolors = true
-vim.cmd.colorscheme("retrobox")
+vim.cmd.colorscheme("habamax")
+
