@@ -4,7 +4,6 @@ local M = {}
 M.plugins = {
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/mason-org/mason.nvim",
-    "https://github.com/mason-org/mason-lspconfig.nvim"
 }
 
 M.config = function()
@@ -15,11 +14,18 @@ M.config = function()
 
     vim.lsp.config("*", { capabilities = capabilities })
 
-    require("mason-lspconfig").setup({
-        ensure_installed = {
-            "lua_ls", 
-            "clangd"
+    vim.lsp.config("lua_ls", {
+        settings = {
+            Lua = {
+                diagnostics = { globals = { "vim" } }
+            }
         }
+    })
+
+    vim.lsp.enable({
+        "lua_ls",
+        "clangd",
+        "cmake-language-server"
     })
 end
 
