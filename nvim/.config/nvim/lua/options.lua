@@ -39,3 +39,10 @@ vim.opt.splitbelow = true -- split to below by default
 vim.opt.splitright = true -- split to right by default
 
 vim.opt.termguicolors = true -- enable terminal gui colors
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+    desc = "Highlight when yanking (copying) text",
+    callback = function()
+        vim.hl.on_yank()
+    end
+})
