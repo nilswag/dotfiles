@@ -10,7 +10,8 @@ local spec_files = {
     "mini-completion",
     "tree-sitter-manager",
     "moonfly",
-    "lsp"
+    "lsp",
+    "cmake-tools"
 }
 
 for i, spec_file in ipairs(spec_files) do
