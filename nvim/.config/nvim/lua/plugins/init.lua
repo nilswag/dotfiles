@@ -16,7 +16,7 @@ local spec_files = {
     "cmake-tools"
 }
 
-for i, spec_file in ipairs(spec_files) do
+for _, spec_file in ipairs(spec_files) do
     local spec = require("plugins/" .. spec_file)
 
     if spec.plugins then
