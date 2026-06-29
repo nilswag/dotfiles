@@ -26,6 +26,9 @@ M.config = function()
         "lua_ls",
         "clangd",
     })
+
+    vim.keymap.set("n", "grd", vim.lsp.buf.definition, { desc = "Go to definition " })
+    vim.keymap.set("n", "grD", vim.lsp.buf.declaration, { desc = "Go to definition " })
 end
 
 return M
