@@ -30,6 +30,8 @@ vim.opt.writebackup = false -- do not write to a backup file
 vim.opt.swapfile = false -- do not create a swap file
 vim.opt.autoread = true -- automatically update file
 
+vim.opt.fillchars = { eob = " " } -- remove ~ for empty lines
+
 vim.opt.mouse = "a" -- enable mouse support
 vim.opt.clipboard:append("unnamedplus") -- use system clipboard
 
@@ -45,4 +47,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
         vim.hl.on_yank()
     end
-})
+}) -- autocmd for shortly highlighting yanked (copied) text
+
+vim.opt.completeopt = "menuone,noselect,fuzzy,nosort" -- completion options
+-- menuone = always show completion list, even with only one selection
+-- noselect = do not insert first item in list
+-- fuzzy = enable fuzzy matching
+-- nosort = keep original order

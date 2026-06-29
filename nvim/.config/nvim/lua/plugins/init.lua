@@ -7,7 +7,8 @@ local spec_files = {
     "mini-statusline",
     "mini-notify",
     "mini-cmdline",
-    "mini-extra"
+    "mini-extra",
+    "mini-completion"
 }
 
 for i, spec_file in ipairs(spec_files) do
