@@ -1,10 +1,10 @@
 vim.api.nvim_create_user_command("PackAdd", function(opts)
     vim.pack.add(opts.fargs)
-end, { nargs = "+", desc = "Add plugins (:PackAdd user/repo)" }
+end, { nargs = "+", desc = "Add plugins (:PackAdd user/repo)" })
 
 vim.api.nvim_create_user_command("PackDel", function(opts)
     vim.pack.del(opts.fargs)
-end, { nargs = "+", desc = "Delete plugins (:PackDel user/repo)" }
+end, { nargs = "+", desc = "Delete plugins (:PackDel user/repo)" })
 
 vim.api.nvim_create_user_command("PackUpdate", function(opts)
     if opts.args:match("%S") then
@@ -13,4 +13,4 @@ vim.api.nvim_create_user_command("PackUpdate", function(opts)
     else
         vim.pack.update()
     end
-end, { nargs = "*", desc = "Update plugins (:PackUpdate user/repo)"}
+end, { nargs = "*", desc = "Update plugins (:PackUpdate user/repo)"})
