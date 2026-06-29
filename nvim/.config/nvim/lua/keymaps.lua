@@ -34,3 +34,11 @@ vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" 
 
 vim.keymap.set("v", "<", "<gv", { desc = "Indent left" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right" })
+
+vim.keymap.set("n", "<leader>tt", function()
+    if vim.diagnostic.is_enabled() then
+        vim.diagnostic.enable(false)
+    else
+        vim.diagnostic.enable(true)
+    end
+end, { desc = "Toggle diagnostic" })

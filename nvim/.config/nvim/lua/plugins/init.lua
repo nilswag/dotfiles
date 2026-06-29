@@ -9,7 +9,8 @@ local spec_files = {
     "mini-extra",
     "mini-completion",
     "tree-sitter-manager",
-    "moonfly"
+    "moonfly",
+    "lsp"
 }
 
 for i, spec_file in ipairs(spec_files) do
