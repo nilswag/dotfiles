@@ -8,7 +8,9 @@ M.config = function()
     require("tree-sitter-manager").setup({
         ensure_installed = {
             "c", "cpp", "lua", "markdown", "markdown_inline", "vimdoc"
-        }
+        },
+
+        auto_install = true
     })
 end
 
