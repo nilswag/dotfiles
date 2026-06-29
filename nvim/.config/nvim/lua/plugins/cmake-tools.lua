@@ -19,6 +19,7 @@ M.config = function()
                 },
             },
         },
+
         cmake_runner = {
             name = "toggleterm",
             opts = {},
