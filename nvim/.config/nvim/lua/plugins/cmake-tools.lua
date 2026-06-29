@@ -6,7 +6,7 @@ M.plugins = {
 }
 
 M.config = function()
-    require("cmake-tools").setup()
+    require("cmake-tools").setup({})
 end
 
 return M
