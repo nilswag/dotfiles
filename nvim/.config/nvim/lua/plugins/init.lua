@@ -1,17 +1,17 @@
 
-local dir = vim.fn.stdpath("config") .. "/lua/plugins"
+local spec_files = {
+    "lualine",
+    "kanagawa"
+}
 
-for name, type in vim.fs.dir(dir) do
-    if type == "file" and name:match("%.lua") and name ~= "init.lua" then
-        local mod_name = "plugins/" .. name:gsub("%.lua$", "")
-        local spec = require(mod_name)
+for i, spec_file in ipairs(spec_files) do
+    local spec = require("plugins/" .. spec_file)
 
-        if spec.plugins then
-            vim.pack.add(spec.plugins, { confirm = false })
-        end
+    if spec.plugins then
+        vim.pack.add(spec.plugins, { confirm = false })
+    end
 
-        if spec.config then
-            spec.config()
-        end
+    if spec.config then
+        spec.config()
     end
 end
