@@ -4,7 +4,10 @@ local spec_files = {
     "mini",
     "mini-pick",
     "mini-files",
-    "mini-statusline"
+    "mini-statusline",
+    "mini-notify",
+    "mini-cmdline",
+    "mini-extra"
 }
 
 for i, spec_file in ipairs(spec_files) do
