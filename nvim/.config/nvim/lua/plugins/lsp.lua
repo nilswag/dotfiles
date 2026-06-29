@@ -25,7 +25,6 @@ M.config = function()
     vim.lsp.enable({
         "lua_ls",
         "clangd",
-        "cmake-language-server"
     })
 end
 
