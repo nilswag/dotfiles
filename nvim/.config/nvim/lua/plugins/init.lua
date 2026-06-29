@@ -9,6 +9,7 @@ local spec_files = {
     "mini-extra",
     "mini-completion",
     "tree-sitter-manager",
+    "git-integration",
     "moonfly",
     "lsp",
     "cmake-tools"
