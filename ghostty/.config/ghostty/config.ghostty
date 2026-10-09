@@ -1,1 +1,9 @@
-command = TERM=xterm-256color /usr/bin/bash
+
+shell-integration = zsh
+
+# turn off annoying confirmation popups
+confirm-close-surface = false
+clipboard-paste-protection = false
+
+# workaround for clear not working in ssh sessions
+command = TERM=xterm-256color /usr/bin/zsh
