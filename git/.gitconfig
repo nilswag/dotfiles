@@ -1,0 +1,7 @@
+[user]
+	email = nilswagemaker05@icloud.com
+	name = nilswag
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
