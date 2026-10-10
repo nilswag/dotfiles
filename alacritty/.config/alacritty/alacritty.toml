@@ -1,8 +1,8 @@
 
 [window]
 dimensions = {
-	columns = 100,
-	lines = 35
+	columns = 110,
+	lines = 40
 }
 
 [font]
