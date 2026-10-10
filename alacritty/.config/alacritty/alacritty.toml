@@ -6,5 +6,9 @@ dimensions = {
 }
 
 [font]
-normal = { family = "GoMono Nerd Font" }
+normal = { 
+	family = "GoMono Nerd Font"
+# 	family = "CodeNewRoman Nerd Font"
+}
 size = 14
+
