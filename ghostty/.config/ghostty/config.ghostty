@@ -1,5 +1,11 @@
 
-shell-integration = zsh
+# set initial window size
+window-width = 120
+window-height = 50
+
+# set font
+font-family = "GoMono Nerd Font"
+# font-family = "CodeNewRoman Nerd Font"
 
 # turn off annoying confirmation popups
 confirm-close-surface = false
