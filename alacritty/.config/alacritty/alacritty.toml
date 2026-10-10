@@ -1,0 +1,10 @@
+
+[window]
+dimensions = {
+	columns = 100,
+	lines = 35
+}
+
+[font]
+normal = { family = "GoMono Nerd Font" }
+size = 14
