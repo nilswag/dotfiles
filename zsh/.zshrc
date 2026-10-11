@@ -1,7 +1,6 @@
 # enable powerlevel11k instant prompt. should stay close to the top of ~/.zshrc.
 # initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-typeset -g POWERLEVEL8K_INSTANT_PROMPT=quiet # turn off powerlevel10k warnings
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
 	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -63,3 +62,11 @@ alias cat='bat -p'
 
 # shell integrations
 eval "$(fzf --zsh)"
+
+
+
+# check if alacritty themes are installed
+THEME_DIR="$HOME/.config/alacritty/themes"
+if [[ ! -d "$THEME_DIR" ]]; then
+	git clone https://github.com/alacritty/alacritty-theme "$THEME_DIR"
+fi
