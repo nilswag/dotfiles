@@ -1,3 +1,7 @@
+[general]
+import = [
+	"~/.config/alacritty/themes/themes/vesper.toml"
+]
 
 [window]
 dimensions = {
