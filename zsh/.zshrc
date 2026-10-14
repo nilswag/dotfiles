@@ -65,8 +65,13 @@ eval "$(fzf --zsh)"
 
 
 
-# check if alacritty themes are installed
+# random config stuff
 THEME_DIR="$HOME/.config/alacritty/themes"
 if [[ ! -d "$THEME_DIR" ]]; then
 	git clone https://github.com/alacritty/alacritty-theme "$THEME_DIR"
+fi
+
+TPM_DIR="$HOME/.tmux/plugins/tpm"
+if [[ ! -d "$TPM_DIR" ]]; then
+	git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
 fi
