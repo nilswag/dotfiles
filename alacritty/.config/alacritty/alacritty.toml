@@ -11,7 +11,8 @@ dimensions = {
 
 [font]
 normal = { 
-	family = "GoMono Nerd Font"
+	family = "Hack Nerd Font Mono"
+#	family = "GoMono Nerd Font"
 # 	family = "CodeNewRoman Nerd Font"
 }
 size = 14
