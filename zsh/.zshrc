@@ -61,6 +61,8 @@ alias ll='ls -l'
 alias la='ll -a'
 alias cat='bat -p'
 
+alias win11='virt-viewer --connect qemu:///system win11'
+
 # shell integrations
 eval "$(fzf --zsh)"
 
